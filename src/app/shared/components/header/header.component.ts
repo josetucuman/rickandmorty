@@ -2,8 +2,15 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  template:`
+  <input
+    #inputSearch
+    type="text"
+    class="form-control-lg"
+    placeholder="Buscando... ..."
+  />
+  `,
+  styles: ['input {width:100;}']
 })
 export class HeaderComponent implements OnInit {
 
